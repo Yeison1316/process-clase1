@@ -9,6 +9,7 @@ public interface UserService {
     User createUser(User user);
 
     User updateUser(User userUpdated, Long id);
+    User deleteUser(User user,Long id);
 
     User getUserById(Long id);
 
