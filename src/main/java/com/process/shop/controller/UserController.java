@@ -15,7 +15,7 @@ public class UserController {
         return userService.createUser(user);
     }
     @GetMapping("/all")
-    public List<User> findAll() {
+    public User findAll() {
         return (List<User>) userService.findAllUser();
     }
     @GetMapping("/{id}")
