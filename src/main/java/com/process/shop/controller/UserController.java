@@ -15,8 +15,8 @@ public class UserController {
         return userService.createUser(user);
     }
     @GetMapping("/all")
-    public List<User> findAll() {
-        return userService.findAll();
+    public List<User> findAllUser() {
+        return userService.findAllUser();
     }
     @GetMapping("/{id}")
     public User getUserById(@RequestParam Long id){
